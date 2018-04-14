@@ -1,0 +1,39 @@
+.nav_list{
+    position: relative;
+    float: right;
+}
+.nav_list li{
+    display: inline-block;
+    float : left;
+    height: inherit;
+    width: 100px;
+    padding: 10px;
+    background-color: darkturquoise;
+}
+.nav_list li a{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#container{
+    padding: 10%;
+}
+#container *{
+    text-align: justify;
+}
+.content-wrap{
+    height: auto;
+    margin-bottom: 30px;
+}
+.content-wrap *{
+    margin: 0;
+}
+.content a{
+    background-color: white;
+    text-decoration: underline;
+    font-style: normal;
+    font-family: none;
+    color: blue;
+}
+.content a:hover{
+    color:red;
+}
