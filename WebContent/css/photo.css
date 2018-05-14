@@ -10,6 +10,10 @@
     margin-top:50px;
     margin-bottom: 50px;
 }
+.photo_date {
+	display:block;
+	text-align:left;
+}
 .photo_wrap > img{
     position: relative;
     top: 0%;
@@ -23,6 +27,7 @@
 .photo_wrap > p{
     position: absolute;
     left:50%;
+     width: 30%;
     display: inline-block;
     margin-bottom: inherit;
     text-align: left;
