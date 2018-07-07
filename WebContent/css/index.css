@@ -5,6 +5,7 @@
 .middle-nav li{
 	width:100px;
 	height:100px;
+	margin:10px;
 }
 .middle-nav li a{
 	line-height:100px;	
@@ -16,6 +17,4 @@
 }
 .middle-nav li span{
 	font-size:1.2em;
-}
-	
 }
