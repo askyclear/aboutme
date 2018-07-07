@@ -6,6 +6,16 @@
 	width:100px;
 	height:100px;
 }
+.middle-nav li a{
+	line-height:100px;	
+	color:#FFFFFF;
+	
+}
+.middle-nav li a:active{
+	color:red;
+}
 .middle-nav li span{
-	line-height:100px;
+	font-size:1.2em;
+}
+	
 }
