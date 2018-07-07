@@ -10,7 +10,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+/*
+ * 현 서블릿으로 request가 올때 현재 시간을 client로  출력하는 servlet 클래스
+ * 수정날짜 : 2018.07.07
+ * 작성자 : 김대선
+ */
 @WebServlet("/today")
 public class TodayServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -33,12 +37,11 @@ public class TodayServlet extends HttpServlet {
 		LocalDateTime currentTime = LocalDateTime.now();
 		DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy/M/d hh:mm"); 
 		String formattedCurrentTime = dateFormat.format(currentTime);
-		System.out.println(formattedCurrentTime);
+		//내용 출력
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<title>몇시예요</title>");
-		out.println("<link rel='stylesheet' href='./css/common.css'>");
 		out.println("<link rel='stylesheet' href='./css/today.css'>");
 		out.println("</head>");
 		out.println("<body>");
