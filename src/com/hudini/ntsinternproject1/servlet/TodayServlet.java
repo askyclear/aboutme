@@ -2,8 +2,6 @@ package com.hudini.ntsinternproject1.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -12,12 +10,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-/*
- * 시스템상에서 현재 시간을 구한뒤 클라이언트로 현재시간 노출하기.
- * 작성날짜 : 2018.07.07
- * 작성자 : 김대선
- */
-import javax.swing.text.DateFormatter;
 
 @WebServlet("/today")
 public class TodayServlet extends HttpServlet {
@@ -42,7 +34,20 @@ public class TodayServlet extends HttpServlet {
 		DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy/M/d hh:mm"); 
 		String formattedCurrentTime = dateFormat.format(currentTime);
 		System.out.println(formattedCurrentTime);
-		
+		out.println("<!DOCTYPE html>");
+		out.println("<html>");
+		out.println("<head>");
+		out.println("<title>몇시예요</title>");
+		out.println("<link rel='stylesheet' href='./css/common.css>");
+		out.println("<link rel='stylesheet' href='./css/today.css'");
+		out.println("</head>");
+		out.println("<body>");
+		out.println("<nav><a href='./index.html'><span>메인으로</span> </a></nav>");
+		out.print("<section><h1>");
+		out.print("현재시간 : " + formattedCurrentTime);
+		out.println("</h1></section>");
+		out.println("</body>");
+		out.println("</html>");
 		out.close();
 	}
 
