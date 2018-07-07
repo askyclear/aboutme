@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  * 작성날짜 : 2018.07.07
  * 작성자 : 김대선
  */
+import javax.swing.text.DateFormatter;
 
 @WebServlet("/today")
 public class TodayServlet extends HttpServlet {
@@ -37,7 +39,7 @@ public class TodayServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		//현재시간 구하기
 		LocalDateTime currentTime = LocalDateTime.now();
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/m/d hh:mm");
+		DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy/M/d hh:mm"); 
 		String formattedCurrentTime = dateFormat.format(currentTime);
 		System.out.println(formattedCurrentTime);
 		
