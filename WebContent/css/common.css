@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+/*
+ * 전체적인 텍스트는 가운데 정렬과 폰트크기를 아래와 같이 정해둔다. 
+ */
+body{
+	width: 1024px;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #C8CBCC;
+}
+body *{
+	text-align: center;
+    font-family: 굴림, verdana, sans-serif;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
