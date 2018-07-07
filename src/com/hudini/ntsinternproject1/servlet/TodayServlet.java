@@ -38,8 +38,8 @@ public class TodayServlet extends HttpServlet {
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<title>몇시예요</title>");
-		out.println("<link rel='stylesheet' href='./css/common.css>");
-		out.println("<link rel='stylesheet' href='./css/today.css'");
+		out.println("<link rel='stylesheet' href='./css/common.css'>");
+		out.println("<link rel='stylesheet' href='./css/today.css'>");
 		out.println("</head>");
 		out.println("<body>");
 		out.println("<nav><a href='./index.html'><span>메인으로</span> </a></nav>");
