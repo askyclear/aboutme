@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+/*
+ * span태그를 가운데 정렬 하려면 부모 태그의 높이로 line-height를 동일하게 맞춘다.
+ */
+.middle-nav li{
+	width:100px;
+	height:100px;
+}
+.middle-nav li span{
+	line-height:100px;
+}
