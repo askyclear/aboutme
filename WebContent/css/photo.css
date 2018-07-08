@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+.content-item{
+	height:300px;
+	margin-bottom:30px;
+}
+.item-img img{
+	width:40%;
+	border:5px solid gray;
+	float:left;
+}
+.item-content{
+	display:inline-block;
+	margin-top:10px;
+	width:40%;
+}
+.item-content *{
+	text-align: left;
+}
+.line{
+	border: 1px solid gray;
+	margin-bottom:30px;
+	
+}

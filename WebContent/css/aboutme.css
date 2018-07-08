@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+#container *{
+	text-align:left;
+}
+article{
+	margin-bottom:40px;
+}
+.content-title{
+	margin-bottom:2px;
+}
+.content-title h2{
+	margin:0;
+	font-size:1.3em;
+	
+}
+.item-header{
+	margin-bottom:0;
+}
+.item-header a{
+	color:blue;
+}
+.item-header a:hover{
+	color:red;
+}
+.item-header a:active{
+	color:red;
+}
+.item-description{
+	margin-top:0;
+}
